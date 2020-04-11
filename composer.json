@@ -1,0 +1,27 @@
+{
+    "name": "dreamworkerspro/theme-wp-co-founder",
+    "type": "wordpress-theme",
+    "description": "Co-founder : A wordpress theme dependent on theme Founder",
+    "license": "proprietary",
+    "homepage": "https://bitbucket.org/dreamworkerspro/theme-wp-co-founder",
+    "authors": [
+        {
+            "name": "Abhisek pandey",
+            "email": "dreamworkers@gmail.com",
+            "homepage": "http://bayard.dreamworkers.in"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+        "wpackagist-theme/founder": "*"
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "installer-name": "co-founder"
+    },
+    "keywords": [
+        "wordpress",
+        "blog",
+        "theme"
+    ]
+}

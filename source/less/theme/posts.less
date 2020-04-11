@@ -1,0 +1,152 @@
+/**
+ * Copyright © Abhisek Pandey. All rights reserved.
+ **/
+
+//  Post Common
+//  ===============
+
+.post-header a {
+    & {
+        color: @color_active_primary;
+        border-color: transparent;
+    }
+
+    &:active,
+    &:focus,
+    &:hover {
+        border-color: @color_active_primary;
+    }
+}
+
+.featured-image {
+    display: none;
+}
+
+.entry {
+    margin: 3em 0;
+}
+
+article {
+    line-height: 1.5rem;
+    color: @color_text_primary;
+    font-size: .8rem;
+}
+
+.post-content {
+    font-size: .75rem;
+}
+
+.post-meta {
+    margin-top: 5px;
+
+    & &__category-separator:after {
+        content: ',';
+        padding-right: 5px;
+    }
+
+    &__date,
+    & &__category-link {
+        font-weight: 700;
+        color: @color_text_primary;
+    }
+}
+
+.wp-caption .wp-caption-text {
+    font-size: 9px;
+}
+
+
+//  Post List
+//  ===============
+
+.full-post .post-comments.post-comments {
+    border-bottom: 1px solid #eee;
+    margin: 0;
+    padding: 0 0 2em;
+}
+
+.more-link-wrapper {
+    margin-bottom: 1em;
+}
+.more-link {
+    margin: 0;
+}
+
+
+//  Post Page
+//  ===============
+
+.post-tags {
+    ul {
+        margin: 0;
+    }
+
+    span {
+        font-weight: 700;
+        font-size: .75rem;
+    }
+
+    li {
+        margin: 0 0 5px 10px;
+    }
+
+    a {
+        padding: 4px 10px;
+        font-size: 9px;
+        text-transform: uppercase;
+        letter-spacing: .05rem;
+    }
+}
+
+.post-after {
+    .social-share {
+        text-align: left;
+    }
+
+    .post-categories {
+        margin: 0 0 1.5em;
+    }
+}
+
+
+//  Comments
+//  ===============
+
+.comments-number {
+    margin: 1em 0;
+
+    h2 {
+        font-size: 1.6rem;
+        border-bottom: 5px solid #eee;
+        padding-bottom: 10px;
+    }
+}
+
+.comment-list li {
+    margin: 1.5em 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1em;
+}
+
+.comment-respond {
+    margin: 2em 0;
+}
+.comment-reply-title {
+    margin-bottom: 1em;
+}
+
+
+//  Large devices
+//  ===============
+
+@media (min-width: 25em) {
+    .more-link {
+        margin: 0;
+    }
+}
+
+@media (min-width: 43.75em) {
+    .entry {
+        margin-bottom: 5em;
+    }
+}

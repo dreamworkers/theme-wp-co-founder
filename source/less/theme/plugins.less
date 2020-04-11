@@ -1,0 +1,54 @@
+/**
+ * Copyright © Abhisek Pandey. All rights reserved.
+ **/
+
+//  Goodreads
+//  ===============
+
+div[class^=gr_custom_container] {
+    border: none !important;
+
+    center {
+        display: none !important;
+    }
+
+    a {
+        border-color: transparent;
+
+        &:hover {
+            border-color: @color_active_primary;
+        }
+    }
+}
+
+div[class^=gr_custom_each_container] {
+    border-bottom: 1px solid #ddd !important;
+}
+
+//  Jetpack Related Posts
+//  =====================
+
+
+#jp-relatedposts {
+    .jp-relatedposts-items {
+        .jp-relatedposts-post {
+            .jp-relatedposts-post-title.jp-relatedposts-post-title a:hover,
+            &:hover .jp-relatedposts-post-title.jp-relatedposts-post-title a {
+                text-decoration: none;
+            }
+
+            .jp-relatedposts-post-title.jp-relatedposts-post-title a {
+                font-weight: 700;
+                color: @color_text_primary;
+            }
+        }
+
+        && p,
+        &-visual.jp-relatedposts-items-visual h4.jp-relatedposts-post-title {
+            font-size: .75rem;
+        }
+        && p.jp-relatedposts-post-date {
+            font-size: .65rem;
+        }
+    }
+}

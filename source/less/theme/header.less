@@ -1,0 +1,81 @@
+/**
+ * Copyright © Abhisek Pandey. All rights reserved.
+ **/
+
+//  Header
+//  ===============
+
+.site-title a {
+    &:hover,
+    &:active,
+    &:focus {
+        color: @color_active_primary;
+    }
+}
+
+.toggle-navigation {
+    &.open,
+    &:focus {
+        color: @color_active_primary;
+    }
+}
+
+.menu-primary-items,
+.menu-unset ul {
+    li.current-menu-item:after,
+    li.current_page_item:after, {
+        background: @color_active_primary;
+    }
+}
+
+.widget_links a img {
+    border: none;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-right: 3px;
+    margin-top: -1px;
+}
+
+/*.sidebar-primary.open .toggle-sidebar {
+    border-top: solid 1px #D4D4D4;
+    border-color: @color_active_primary;
+    border-top-color: #D4D4D4;
+}
+.sidebar-primary.open .toggle-sidebar i {
+    color: @color_active_primary;
+}*/
+
+
+//  Large devices
+//  ===============
+
+@media (min-width: 37.5em) {
+    .menu-primary-items,
+    .menu-unset ul {
+        li.current-menu-item > a,
+        li.current_page_item > a {
+            border-color: @color_active_primary;
+        }
+    }
+}
+
+@media (min-width: 56.25em) {
+    .social-media-icons a {
+        &:active,
+        &:focus,
+        &:hover {
+            color: @color_active_primary;
+        }
+    }
+
+    /* .toggle-sidebar:active,
+    .toggle-sidebar:focus,
+    .toggle-sidebar:hover {
+        border-color: @color_active_primary;
+    }
+    .toggle-sidebar:focus i,
+    .toggle-sidebar:hover i {
+        color: @color_active_primary;
+    }*/
+}

@@ -1,0 +1,78 @@
+/**
+ * Copyright © Abhisek Pandey. All rights reserved.
+ **/
+
+//  Social Share
+//  ===============
+
+.social-share {
+    margin: 5px auto;
+    text-align: center;
+
+    &__btn {
+        transition: .2s background-color;
+        margin: 0 2px 5px;
+        padding: 5px;
+        line-height: 0;
+        text-decoration: none;
+        border: 0;
+    }
+
+    &__btn,
+    &__btn__icon {
+        display: inline-block;
+        overflow: hidden;
+        speak: none;
+        font-style: normal;
+        font-weight: 400;
+        font-variant: normal;
+        text-transform: none;
+    }
+
+    &__btn__icon {
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+        float: left;
+
+        svg,
+        path {
+            transition: .2s fill;
+        }
+    }
+
+    &__btn__name {
+        vertical-align: middle;
+        display: inline-block;
+        float: left;
+        margin: 0 3px;
+        transition: .2s color;
+    }
+
+    &--show_icon &__btn__name {
+        display: none;
+    }
+
+    &--show_name &__btn__icon {
+        display: none;
+    }
+
+    span,
+    & &__btn:hover span {
+        color: #fff;
+    }
+
+    svg,
+    path,
+    & &__btn:hover svg,
+    & &__btn:hover path {
+        fill: #fff;
+    }
+
+    & &__btn {
+        background-color: #333;
+    }
+
+    & &__btn:hover {
+        background-color: #666;
+    }
+}
