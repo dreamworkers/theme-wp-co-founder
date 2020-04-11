@@ -1,9 +1,9 @@
 {
-    "name": "dreamworkerspro/theme-wp-co-founder",
+    "name": "dreamworkers/theme-wp-co-founder",
     "type": "wordpress-theme",
     "description": "Co-founder : A wordpress theme dependent on theme Founder",
     "license": "proprietary",
-    "homepage": "https://bitbucket.org/dreamworkerspro/theme-wp-co-founder",
+    "homepage": "https://github.com/dreamworkers/theme-wp-co-founder",
     "authors": [
         {
             "name": "Abhisek pandey",
