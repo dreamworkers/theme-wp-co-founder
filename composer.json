@@ -2,7 +2,7 @@
     "name": "dreamworkers/theme-wp-co-founder",
     "type": "wordpress-theme",
     "description": "Co-founder : A wordpress theme dependent on theme Founder",
-    "license": "proprietary",
+    "license": "GNU General Public License v2.0",
     "homepage": "https://github.com/dreamworkers/theme-wp-co-founder",
     "authors": [
         {
